@@ -563,7 +563,7 @@ const seo = {
 </div>
 <!-- Right Column: Interactive Form -->
 <div class="w-full lg:w-7/12 bg-surface-container-lowest p-8 lg:p-10 rounded-xl shadow-md">
-<form class="space-y-6" id="form-presupuesto" onsubmit="event.preventDefault(); showFormSuccess();">
+<form class="space-y-6" id="form-presupuesto" >
 <div class="space-y-2">
 <h3 class="font-headline-sm text-headline-sm text-primary">Solicitud de Presupuesto Agrícola</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Completa los campos a continuación para remitir tu consulta a nuestro departamento técnico.</p>
@@ -628,19 +628,21 @@ const seo = {
               He leído y acepto la política de privacidad y el tratamiento de datos para la elaboración de la propuesta técnica agronómica.
             </label>
 </div>
+
 <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
-<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg px-8 py-3.5 rounded-lg shadow-sm transition-colors" type="submit">
-<span>Enviar solicitud de presupuesto</span>
-<span class="material-symbols-outlined text-lg">send</span>
-</button>
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg px-6 py-3.5 rounded-lg transition-colors" href="https://wa.me/34638717215" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-lg text-secondary">chat</span>
-<span>Enviar por WhatsApp</span>
-</a>
+  <button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-lg text-label-lg px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-bold tracking-wide" type="submit">
+    <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.529 1.834.819 2.796.82 3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm0 10.373c-.888 0-1.745-.245-2.485-.708l-.178-.112-1.848.485.493-1.802-.123-.195c-.508-.809-.776-1.747-.776-2.475 0-2.539 2.065-4.604 4.606-4.604 2.539 0 4.605 2.065 4.606 4.604 0 2.54-2.067 4.605-4.608 4.605zm3.172-3.468c-.173-.087-1.026-.506-1.185-.564-.159-.058-.275-.087-.391.087-.116.174-.45.564-.551.68-.101.116-.203.13-.377.043-.174-.087-.735-.271-1.4-1.864-.517-.461-.867-1.031-.968-1.205-.101-.174-.011-.268.076-.355.078-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.941-.536-1.29-.141-.339-.285-.293-.391-.299l-.334-.004c-.116 0-.304.043-.464.217-.159.174-.609.594-.609 1.45 0 .855.623 1.681.71 1.797.087.116 1.226 1.872 2.97 2.625 1.744.753 1.744.502 2.063.473.319-.029 1.026-.419 1.171-.825.145-.406.145-.754.101-.826-.044-.072-.159-.116-.333-.203z"/></svg>
+    <span>Enviar por WhatsApp a SODAGRO</span>
+  </button>
 </div>
-<div class="hidden p-4 rounded-lg bg-secondary-container text-on-secondary-container font-body-sm text-body-sm" id="form-status">
-            ¡Gracias por contactar con SODAGRO! Tu solicitud ha sido registrada correctamente. Un agrónomo de nuestro equipo se pondrá en contacto contigo a la mayor brevedad.
-          </div>
+<div class="hidden p-4 rounded-xl bg-gradient-to-r from-[#1b2f23] to-[#244d36] text-white flex flex-col sm:flex-row items-center justify-between gap-3 mt-4" id="form-status">
+  <div class="flex items-center gap-2">
+    <span class="material-symbols-outlined text-2xl text-[#beecb0]">check_circle</span>
+    <span class="font-bold text-sm">¡Mensaje preparado en WhatsApp! Pulsa si no se abre automáticamente:</span>
+  </div>
+  <a id="servicesWhatsappLink" href="https://wa.me/34638717215" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs px-4 py-2 rounded-lg">Abrir WhatsApp</a>
+</div>
+
 </form>
 </div>
 </div>
@@ -733,4 +735,66 @@ const seo = {
     }
   }
 </script></main><a aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-primary hover:bg-secondary text-on-primary px-4 py-3 rounded-full shadow-[0_8px_24px_rgba(37,43,38,0.16)] transition-all group" href="https://wa.me/34638717215" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-2xl">chat</span><span class="font-label-lg text-label-lg hidden sm:inline group-hover:inline transition-all">WhatsApp directo</span></a>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const servForm = document.getElementById('form-presupuesto');
+    if (servForm) {
+      servForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const fd = new FormData(servForm);
+        const nombre = fd.get('nombre')?.toString().trim() || 'No indicado';
+        const telefono = fd.get('telefono')?.toString().trim() || '';
+        const municipio = fd.get('municipio')?.toString().trim() || 'No indicado';
+        const hectareas = fd.get('hectareas')?.toString().trim() || '';
+        const mensaje = fd.get('mensaje')?.toString().trim() || '';
+
+        const checkboxes = servForm.querySelectorAll('input[name="servicios"]:checked');
+        const selectedServices = [];
+        const labelsMap = {
+          pac: 'Gestión PAC y Ayudas',
+          plantaciones: 'Vivero y Plantación',
+          mantenimiento: 'Laboreo y Mantenimiento',
+          sanidad: 'Tratamientos y Sanidad',
+          recoleccion: 'Campaña de Recolección',
+          integral: 'Gestión Integral 360°'
+        };
+        checkboxes.forEach(cb => {
+          selectedServices.push(labelsMap[cb.value] || cb.value);
+        });
+
+        let text = '🚜 *SOLICITUD DE PRESUPUESTO — SODAGRO*\n';
+        text += '━━━━━━━━━━━━━━━━━━━━━━\n';
+        text += '👤 *Nombre:* ' + nombre + '\n';
+        text += '📞 *Teléfono:* +34 ' + telefono + '\n';
+        text += '📍 *Municipio / Zona:* ' + municipio + '\n';
+        if (hectareas) {
+          text += '📐 *Superficie:* ' + hectareas + ' ha\n';
+        }
+        if (selectedServices.length > 0) {
+          text += '🛠️ *Servicios de interés:*\n';
+          selectedServices.forEach(s => {
+            text += '  • ' + s + '\n';
+          });
+        }
+        if (mensaje) {
+          text += '\n💬 *Detalles de la finca:*\n"' + mensaje + '"\n';
+        }
+        text += '━━━━━━━━━━━━━━━━━━━━━━\n';
+        text += '_Enviado desde sodagro.es/servicios_';
+
+        const encoded = encodeURIComponent(text);
+        const whatsappUrl = 'https://wa.me/34638717215?text=' + encoded;
+
+        const status = document.getElementById('form-status');
+        const link = document.getElementById('servicesWhatsappLink');
+        if (status) status.classList.remove('hidden');
+        if (link) link.href = whatsappUrl;
+
+        window.open(whatsappUrl, '_blank');
+      });
+    }
+  });
+</script>
+
 </Layout>
