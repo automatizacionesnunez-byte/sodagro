@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-08-01T12:44:47.188Z",
+  "source": "Unsplash",
+  "assets": [
+    {
+      "file": "hero.webp",
+      "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&h=1280&q=82&fm=webp",
+      "alt": "Interior luminoso de un estudio de trabajo",
+      "credit": "Unsplash / Nastuh Abohov"
+    },
+    {
+      "file": "hero-mobile.webp",
+      "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&h=1200&q=82&fm=webp",
+      "alt": "Interior luminoso de un estudio de trabajo",
+      "credit": "Unsplash / Nastuh Abohov"
+    },
+    {
+      "file": "feature-1.webp",
+      "url": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&h=900&q=82&fm=webp",
+      "alt": "Equipo colaborando alrededor de una mesa",
+      "credit": "Unsplash / Annie Spratt"
+    },
+    {
+      "file": "feature-2.webp",
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&h=900&q=82&fm=webp",
+      "alt": "Persona trabajando frente a un portátil",
+      "credit": "Unsplash / Annie Spratt"
+    },
+    {
+      "file": "feature-3.webp",
+      "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&h=900&q=82&fm=webp",
+      "alt": "Reunión de trabajo en un espacio profesional",
+      "credit": "Unsplash / Campaign Creators"
+    },
+    {
+      "file": "about.webp",
+      "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&h=1100&q=82&fm=webp",
+      "alt": "Espacio de trabajo con luz natural",
+      "credit": "Unsplash / Copernico"
+    },
+    {
+      "file": "team-1.webp",
+      "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&h=700&q=82&fm=webp",
+      "alt": "Retrato profesional de una persona del equipo",
+      "credit": "Unsplash / LinkedIn Sales Solutions"
+    },
+    {
+      "file": "team-2.webp",
+      "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&h=700&q=82&fm=webp",
+      "alt": "Retrato profesional de una persona del equipo",
+      "credit": "Unsplash / LinkedIn Sales Solutions"
+    },
+    {
+      "file": "team-3.webp",
+      "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&h=700&q=82&fm=webp",
+      "alt": "Retrato profesional de una persona del equipo",
+      "credit": "Unsplash / LinkedIn Sales Solutions"
+    },
+    {
+      "file": "og-image.webp",
+      "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&h=630&q=82&fm=webp",
+      "alt": "Espacio de trabajo contemporáneo",
+      "credit": "Unsplash / Nastuh Abohov"
+    }
+  ]
+}

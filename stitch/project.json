@@ -1,0 +1,233 @@
+{
+  "name": "projects/5784266875012465156",
+  "title": "SODAGRO Corporate Web Platform",
+  "visibility": "PRIVATE",
+  "createTime": "2026-10-28T19:47:14.680396Z",
+  "updateTime": "2026-10-28T20:06:02.165043Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "thumbnailScreenshot": {
+    "name": "projects/5784266875012465156/screens/e387e6dcbe6b45dd990e73413e6f8e14/fileEntries/screenshot",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U4pjZ2veHc3TqAYnf9aMr0Ww6erEbbbWMUNY5YU6GEQWscaxic9QXm1sglKdtoAiqKFm92cz3PI5o3TBA6GAkFStfmEkZhldvYTNr67qaoUAe5XOgfAp-F65NLfeZ75cRUmUlkgWTetSN9zbQDlQ7joCCTQGDwbXDm_lvFABUva4Y9wBbdmF6BwyP3CI87fxsPDZgA29Y82OwNe7sfpgUAvTjQq9o3UvXJD_o3meMCOgU2NHsaxXVuqEo"
+  },
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "MANROPE",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#244d36",
+    "headlineFont": "MANROPE",
+    "bodyFont": "INTER",
+    "labelFont": "INTER",
+    "namedColors": {
+      "tertiary_container": "#5f3e19",
+      "on_background": "#171d18",
+      "surface_container_highest": "#dee4dc",
+      "primary_fixed": "#bfedce",
+      "on_primary": "#ffffff",
+      "on_secondary": "#ffffff",
+      "on_tertiary_fixed_variant": "#61401a",
+      "inverse_on_surface": "#edf2ea",
+      "tertiary_fixed": "#ffdcbc",
+      "surface": "#f5fbf3",
+      "error_container": "#ffdad6",
+      "on_surface": "#171d18",
+      "secondary_container": "#beecb0",
+      "on_secondary_fixed": "#002201",
+      "on_tertiary_fixed": "#2c1700",
+      "secondary_fixed_dim": "#a5d398",
+      "on_tertiary": "#ffffff",
+      "outline": "#717972",
+      "on_secondary_container": "#446c3c",
+      "error": "#ba1a1a",
+      "on_error": "#ffffff",
+      "on_error_container": "#93000a",
+      "surface_container": "#eaf0e8",
+      "tertiary": "#452805",
+      "on_surface_variant": "#414943",
+      "on_primary_fixed_variant": "#264f38",
+      "on_primary_container": "#91bd9f",
+      "surface_variant": "#dee4dc",
+      "secondary": "#406838",
+      "surface_tint": "#3e674e",
+      "outline_variant": "#c1c8c1",
+      "surface_container_high": "#e4eae2",
+      "on_tertiary_container": "#d8aa7b",
+      "surface_container_low": "#eff5ed",
+      "inverse_surface": "#2c322d",
+      "on_primary_fixed": "#002111",
+      "tertiary_fixed_dim": "#eebe8d",
+      "primary": "#0a3621",
+      "primary_container": "#244d36",
+      "primary_fixed_dim": "#a4d1b3",
+      "background": "#f5fbf3",
+      "on_secondary_fixed_variant": "#294f23",
+      "surface_dim": "#d6dcd4",
+      "surface_bright": "#f5fbf3",
+      "inverse_primary": "#a4d1b3",
+      "secondary_fixed": "#c1efb3",
+      "surface_container_lowest": "#ffffff"
+    },
+    "designMd": "---\nname: Agro-Corporativo Andaluz\ncolors:\n  surface: '#f5fbf3'\n  surface-dim: '#d6dcd4'\n  surface-bright: '#f5fbf3'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#eff5ed'\n  surface-container: '#eaf0e8'\n  surface-container-high: '#e4eae2'\n  surface-container-highest: '#dee4dc'\n  on-surface: '#171d18'\n  on-surface-variant: '#414943'\n  inverse-surface: '#2c322d'\n  inverse-on-surface: '#edf2ea'\n  outline: '#717972'\n  outline-variant: '#c1c8c1'\n  surface-tint: '#3e674e'\n  primary: '#0a3621'\n  on-primary: '#ffffff'\n  primary-container: '#244d36'\n  on-primary-container: '#91bd9f'\n  inverse-primary: '#a4d1b3'\n  secondary: '#406838'\n  on-secondary: '#ffffff'\n  secondary-container: '#beecb0'\n  on-secondary-container: '#446c3c'\n  tertiary: '#452805'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#5f3e19'\n  on-tertiary-container: '#d8aa7b'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#bfedce'\n  primary-fixed-dim: '#a4d1b3'\n  on-primary-fixed: '#002111'\n  on-primary-fixed-variant: '#264f38'\n  secondary-fixed: '#c1efb3'\n  secondary-fixed-dim: '#a5d398'\n  on-secondary-fixed: '#002201'\n  on-secondary-fixed-variant: '#294f23'\n  tertiary-fixed: '#ffdcbc'\n  tertiary-fixed-dim: '#eebe8d'\n  on-tertiary-fixed: '#2c1700'\n  on-tertiary-fixed-variant: '#61401a'\n  background: '#f5fbf3'\n  on-background: '#171d18'\n  surface-variant: '#dee4dc'\ntypography:\n  display:\n    fontFamily: Manrope\n    fontSize: 52px\n    fontWeight: '800'\n    lineHeight: 60px\n    letterSpacing: -0.02em\n  display-mobile:\n    fontFamily: Manrope\n    fontSize: 36px\n    fontWeight: '800'\n    lineHeight: 42px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Manrope\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: 48px\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Manrope\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 36px\n    letterSpacing: -0.015em\n  headline-md:\n    fontFamily: Manrope\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-md-mobile:\n    fontFamily: Manrope\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Manrope\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: '0'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: -0.005em\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n    letterSpacing: '0'\n  body-sm:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0.005em\n  label-lg:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.01em\n  label-md:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.02em\n  label-caption:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '500'\n    lineHeight: 14px\n    letterSpacing: 0.04em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 2rem\n  margin-mobile: 1rem\n  margin-desktop: 4rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n  space-xxl: 4rem\n  space-section: 6rem\n---\n\n## Brand & Style\n\n### Identidad y Propósito\nEl sistema de diseño está concebido para reflejar la solidez, solvencia técnica y cercanía directa del campo andaluz profesional. Evita deliberadamente la estética de software genérico o artificios \"tech\". El lenguaje visual combina la sobriedad corporativa de una empresa de ingeniería agropecuaria con la dignidad terrenal de las explotaciones de olivar, almendro y cereal del sur de España.\n\n### Audiencia y Tono Emocional\n- **Audiencia:** Propietarios de fincas, directores de cooperativas agrarias, técnicos de campo y agricultores autónomos que buscan un socio operativo integral.\n- **Respuesta emocional:** Tranquilidad operativa, fiabilidad inmediata, arraigo geográfico real y rigor profesional. La interfaz debe transmitir que detrás de cada botón hay maquinaria real, agrónomos titulados y presencia en el terreno.\n\n### Enfoque Estético\n- **Estilo:** *Corporate / Modern Táctil Terrestre*. Basado en amplias superficies de blanco y crema vegetal, líneas divisorias precisas, contrastes naturales de alta legibilidad bajo luz solar intensa y microdetalles en tono arcilla que anclan la experiencia visual en el suelo productivo.\n\n## Colors\n\n### Jerarquía y Aplicación Cromática\n\n- **Primario (#244D36 - Verde Agrícola Profundo):** Representa el dosel del olivo adulto y la solvencia institucional. Se reserva para barras maestras de navegación, botones primarios, titulares mayores en secciones claras y módulos de cierre/conversión de alta prioridad.\n- **Secundario (#537C4A - Verde Botánico Activo):** Simboliza el desarrollo vegetativo y la precisión técnica. Se emplea en estados de interacción (hover), etiquetas de verificación, estados completados y acentos estructurales secundarios.\n- **Terciario (#A47B50 - Arcilla Campiña):** Evoca la tierra fértil, el sustrato calizo y la cosecha. Utilizado con estricta parsimonia para destacar llamadas a la acción comerciales estratégicas (botones de presupuesto prioritarios, insignias de acreditación técnica y conectores de ciclo).\n- **Superficie Crema (#F6F3EB) y Verde Suave (#EAF0E5):** Fondos de contención que reducen el deslumbramiento en exteriores, creando capas térmicas y orgánicas sin sacrificar nitidez.\n- **Neutro Oscuro (#252B26 - Gris Antracita Orgánico):** Tinta principal para todo el cuerpo de texto, garantizando un ratio de contraste superior a 11:1 sobre fondos claros para una lectura sin fatiga.\n- **Neutro Claro (#FFFFFF - Blanco Puro):** Contenedores de tarjetas de datos, formularios y módulos de contraste.\n\n## Typography\n\n### Filosofía Tipográfica\nEl emparejamiento responde a la funcionalidad agronómica y directiva:\n- **Manrope:** Proporciona un carácter geométrico pero robusto, con remates abiertos y proporciones equilibradas que transmiten precisión de ingeniería sin perder el pulso humano de una empresa de servicios de proximidad.\n- **Inter:** Asegura una legibilidad óptima para datos técnicos densos (hectáreas, dosificación, fechas de campaña, teléfonos de guardia), optimizada con números tabulares para tablas de costes y superficies.\n\n### Normas de Composición\n1. Los títulos principales emplean seguimiento (*tracking*) negativo sutil para condensar el impacto visual sin sacrificar claridad.\n2. Los textos explicativos nunca descienden de 14px en dispositivos móviles, priorizando la legibilidad para operarios o técnicos en movimiento.\n3. Los números telefónicos y datos de contacto siempre se formatean con peso seminegrilla (*weight: 600*) y espaciado monoespaciado en dígitos numéricos cuando aparecen en tablas.\n\n## Layout & Spacing\n\n### Sistema de Cuadrícula\n- **Escritorio (> 1024px):** Cuadrícula fluida de 12 columnas con margen máximo acotado a 1280px para mantener anchos de línea óptimos (60-75 caracteres). Canalón (*gutter*) de 24px (1.5rem).\n- **Tablet (768px - 1023px):** Cuadrícula de 8 columnas con margen lateral de 32px (2rem) y canalón de 20px.\n- **Móvil (< 767px):** Cuadrícula de 4 columnas con márgenes exteriores seguros de 16px (1rem) y canalón de 16px.\n\n### Ritmo Vertical\nEl espaciado vertical se estructura en una escala estricta de base 8:\n- Módulos de sección mayores: separados por `space-section` (96px) en escritorio y `space-xxl` (64px) en móvil.\n- Grupos funcionales internos dentro de tarjetas: regulados por `space-md` (16px) a `space-lg` (24px).\n- Elementos inline y chips de estado: compactados a `space-xs` (4px) y `space-sm` (8px).\n\n## Elevation & Depth\n\n### Filosofía de Capas y Profundidad\nEl sistema prescinde de sombras flotantes etéreas o difusiones de neón incompatibles con el entorno rural corporativo. La profundidad se articula mediante **relieve constructivo y capas tonales**:\n\n1. **Plano 0 (Lienzo Base):** Fondos alternos en Blanco Puro (#FFFFFF) y Crema Natural (#F6F3EB) para dividir temáticamente el recorrido.\n2. **Plano 1 (Tarjetas y Contenedores):** Superficies con bordes de bajo contraste de 1px en `#244D36` con opacidad del 12% (`rgba(36, 77, 54, 0.12)`). En interacción hover, se añade una sombra de contacto cálida: `0 8px 24px rgba(37, 43, 38, 0.08)`.\n3. **Plano 2 (Elementos Flotantes y Sticky Header):** El encabezado y el disparador de WhatsApp emplean un sutil desenfoque de fondo (*backdrop-filter: blur(12px)*) combinado con un fondo blanco al 96% de opacidad y una línea perimetral inferior sólida de 1px en `#EAF0E5`.\n4. **Plano 3 (Modales y Diálogos de Presupuesto):** Sombra envolvente estructurada: `0 16px 40px rgba(36, 77, 54, 0.16)`, con telón de fondo oscurecido en `#252B26` al 65% de opacidad.\n\n## Shapes\n\n### Lenguaje Formal\nEl sistema adopta el estándar de radio moderado (`roundedness: 2`), equilibrando la exactitud ingenieril con la ergonomía moderna:\n- **Componentes Base (Botones, Inputs, Tags):** Radio de 8px (0.5rem). Aporta estabilidad y nitidez.\n- **Contenedores y Tarjetas Principales (`rounded-lg`):** Radio de 16px (1rem). Suaviza la lectura visual en bloques de contenido fotográfico.\n- **Modales y Bloques CTA Relevantes (`rounded-xl`):** Radio de 24px (1.5rem).\n- **Indicadores de Paso y Botón Flotante:** Radio 9999px (circular completo) reservado exclusivamente para contadores numéricos y acciones rápidas circulares.\n\n## Components\n\n### 1. Header Corporativo Persistente\n- **Estructura:** Disposición en 3 bloques (Logotipo SODAGRO con descriptor \"Soluciones y Desarrollos Agrícolas\", navegación principal central, bloque de acción y contacto rápido).\n- **Acceso Telefónico:** Número directo enlazado `tel:+34638717215` visible en escritorio con prefijo de atención técnica inmediata.\n- **Navegación:** Desplegable sobrio para servicios integrales (Recolección mecanizada, Tratamientos fitosanitarios, Gestión técnica de explotaciones, Poda y mantenimiento, Preparación de suelos).\n- **Botón CTA de Cabecera:** Tamaño mediano, fondo verde primario `#244D36`, texto blanco, con transición de color al verde secundario `#537C4A`.\n\n### 2. Botones (Buttons)\n- **Primario Corporativo:** Fondo `#244D36`, texto blanco, relleno vertical 14px, horizontal 24px. Estado hover a `#537C4A`.\n- **Acento Presupuesto / Comercial:** Fondo `#A47B50` (Arcilla), texto blanco. Reservado para conversiones de contratación o envío de formulario. Hover a oscurecimiento natural de arcilla (`#8F6A44`).\n- **Secundario / Esquema (Outline):** Fondo transparente, borde de 1.5px en `#244D36`, texto `#244D36`. Hover con fondo verde suave `#EAF0E5`.\n- **Botón Flotante WhatsApp:** Botón circular de 56px ubicado en la esquina inferior derecha (offset 24px). Icono oficial de mensajería sobre fondo `#25D366` o `#244D36` sobrio con insignia de disponibilidad y tooltip directo: \"¿Dudas con su finca? Escríbanos al 638 71 72 15\".\n\n### 3. Tarjetas de Servicio Agrícola\n- **Estructura Visual:** \n  1. Contenedor con radio de 16px, fondo blanco y borde fino `#E5E7EB`.\n  2. Ventana superior con fotografía real de alta calidad (maquinaria, olivar de Cabra, almendro).\n  3. Chip o etiqueta de área técnica posicionado sobre el contenido (Fondo `#EAF0E5`, texto `#244D36`).\n  4. Titular en Manrope de 20px, descripción corta de tareas operativas y enlace final \"Ver detalles de servicio\" con flecha de avance direccional.\n\n### 4. Línea de Proceso: Ciclo Agrícola en 6 Pasos (\"De la tierra a la cosecha\")\n- **Disposición:** Carril horizontal conectado en escritorio con línea continua segmentada en color `#A47B50`; disposición vertical en móvil con línea guía lateral.\n- **Nodos:** Círculo de 40px con número ordinal (01 al 06) en Manrope negrita. Fondo blanco con borde de 2px en verde agrícola cuando está activo, o verde sólido `#244D36` con número en blanco.\n- **Contenido por Nodo:** Título conciso del hito agronómico y párrafo descriptivo breve (máximo 3 líneas).\n\n### 5. Tarjetas de Ventajas Competitivas\n- **Estilo:** Cero artificio métrico o gráficos abstractos. Paneles sólidos en Crema Natural `#F6F3EB` o Blanco.\n- **Iconografía:** Iconos lineales técnicos de 24px en trazo verde oscuro `#244D36` (maquinaria propia, personal cualificado, arraigo en la Subbética cordobesa, respuesta en menos de 24h).\n- **Tipografía:** Título en Manrope de 18px con texto explicativo en Inter de 14px en color `#252B26`.\n\n### 6. Módulo Central CTA (Fondo Verde Oscuro)\n- **Fondo:** `#244D36` sólido con textura sutil o geometría limpia sin interferencias.\n- **Contenido:** Titular en blanco (\"¿Necesita optimizar la rentabilidad de su explotación?\"), subtítulo descriptivo, botón directo a \"Solicitar Presupuesto\" en tono Arcilla `#A47B50` y enlace directo a WhatsApp (+34 638 71 72 15).\n\n### 7. Formulario de Presupuesto Técnico\n- **Campos de Entrada (Input Fields):**\n  - Altura de 48px, fondo blanco puro, borde de 1px en `#D1D5DB`.\n  - En estado activo/foco: Borde de 2px en `#244D36` sin resplandores artificiales.\n  - Tipografía de placeholder: `#6B7280`. Texto ingresado: `#252B26`.\n- **Selectores de Especialidad:** Grupo de chips seleccionables con estado activo en `#EAF0E5` y borde `#244D36`.\n- **Selector de Superficie:** Input numérico con sufijo de unidad fija \"Hectáreas (ha)\".\n\n### 8. Acordeones de Dudas Frecuentes (FAQ)\n- **Estructura:** Lista modular con bordes separadores de 1px en `#E5E7EB`.\n- **Disparador:** Título en Manrope de 18px con icono de cruz o flecha que rota 180° con transición de 200ms.\n- **Panel de Respuesta:** Fondo sutil `#F6F3EB` con relleno interior de 20px y texto en Inter de 15px de alta legibilidad.\n\n### 9. Pie de Página Corporativo (Footer)\n- **Fondo:** `#252B26` (Antracita) con texto en `#E5E7EB` y acentos en `#A47B50`.\n- **Contenido Esencial:**\n  - Identidad SODAGRO y misión de servicio integral.\n  - Dirección física visible y verificable: Huerta Vado del Mor 131, 14940 Cabra (Córdoba).\n  - Teléfono directo (+34 638 71 72 15) y correo de administración.\n  - Horario de atención operativa de campo y oficina.\n  - Bloque legal: Aviso legal, Política de privacidad y Registro agronómico reglamentario.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#244d36",
+    "overrideSecondaryColor": "#537c4a",
+    "overrideTertiaryColor": "#a47b50",
+    "overrideNeutralColor": "#252b26",
+    "spacingScale": 2,
+    "typography": {
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0"
+      },
+      "label-md": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.02em"
+      },
+      "headline-sm": {
+        "fontFamily": "Manrope",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "0"
+      },
+      "label-caption": {
+        "fontFamily": "Inter",
+        "fontSize": "11px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "0.04em"
+      },
+      "label-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.01em"
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "0.005em"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.005em"
+      },
+      "headline-md": {
+        "fontFamily": "Manrope",
+        "fontSize": "28px",
+        "fontWeight": "600",
+        "lineHeight": "36px",
+        "letterSpacing": "-0.01em"
+      },
+      "headline-md-mobile": {
+        "fontFamily": "Manrope",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.01em"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Manrope",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "36px",
+        "letterSpacing": "-0.015em"
+      },
+      "headline-lg": {
+        "fontFamily": "Manrope",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "48px",
+        "letterSpacing": "-0.015em"
+      },
+      "display": {
+        "fontFamily": "Manrope",
+        "fontSize": "52px",
+        "fontWeight": "800",
+        "lineHeight": "60px",
+        "letterSpacing": "-0.02em"
+      },
+      "display-mobile": {
+        "fontFamily": "Manrope",
+        "fontSize": "36px",
+        "fontWeight": "800",
+        "lineHeight": "42px",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "spacing": {
+      "gutter-mobile": "1rem",
+      "space-sm": "0.5rem",
+      "margin": "2rem",
+      "space-md": "1rem",
+      "space-section": "6rem",
+      "gutter": "1.5rem",
+      "space-xs": "0.25rem",
+      "space-xxl": "4rem",
+      "margin-desktop": "4rem",
+      "space-xl": "2.5rem",
+      "space-lg": "1.5rem",
+      "margin-mobile": "1rem"
+    },
+    "headlineFontFamily": "Manrope",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "Inter"
+  },
+  "screenInstances": [
+    {
+      "id": "27449861850345b788b1859568102656",
+      "sourceScreen": "projects/5784266875012465156/screens/27449861850345b788b1859568102656",
+      "x": 2368,
+      "width": 1280,
+      "height": 5460,
+      "label": "Sobre SODAGRO — Empresa Agrícola"
+    },
+    {
+      "id": "4c551e3032774f1aaff57b9b27db55e8",
+      "sourceScreen": "projects/5784266875012465156/screens/4c551e3032774f1aaff57b9b27db55e8",
+      "x": 1024,
+      "width": 1280,
+      "height": 8553,
+      "label": "Servicios — SODAGRO Soluciones Agrícolas"
+    },
+    {
+      "id": "53f778169b0749009e2b2fc95004d121",
+      "sourceScreen": "projects/5784266875012465156/screens/53f778169b0749009e2b2fc95004d121",
+      "x": 3712,
+      "width": 1280,
+      "height": 7513,
+      "label": "Inicio — SODAGRO Soluciones Agrícolas"
+    },
+    {
+      "id": "assets_3b36a2c9e0754dd283ecefd1378d2605",
+      "width": 960,
+      "height": 540,
+      "sourceAsset": "assets/3b36a2c9e0754dd283ecefd1378d2605",
+      "type": "DESIGN_SYSTEM_INSTANCE"
+    },
+    {
+      "id": "e387e6dcbe6b45dd990e73413e6f8e14",
+      "sourceScreen": "projects/5784266875012465156/screens/e387e6dcbe6b45dd990e73413e6f8e14",
+      "x": 5056,
+      "width": 1280,
+      "height": 2912,
+      "label": "Contacto y Presupuesto — SODAGRO"
+    }
+  ],
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

@@ -1,0 +1,63 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = Astro.url.pathname } = Astro.props;
+
+const navLinks = [
+  { href: "/", label: "Inicio" },
+  { href: "/servicios", label: "Servicios" },
+  { href: "/sobre", label: "Sobre Nosotros" },
+  { href: "/contacto", label: "Contacto" },
+];
+---
+
+<header class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-neutral-200/50 shadow-[0_1px_8px_rgba(0,0,0,0.03)] transition-all">
+  <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+    <!-- Logo SODAGRO (Limpio, sin textos duplicados) -->
+    <a href="/" class="flex items-center shrink-0 hover:opacity-95 transition-opacity" aria-label="SODAGRO Inicio">
+      <img
+        alt="SODAGRO"
+        class="h-11 w-auto object-contain"
+        src="/assets/logo-sodagro.svg"
+      />
+    </a>
+
+    <!-- Navegacion Principal Simplificada y Directa -->
+    <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-neutral-700" aria-label="Navegación principal">
+      {navLinks.map((link) => {
+        const isActive = currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href));
+        return (
+          <a
+            href={link.href}
+            class:list={[
+              "transition-colors py-1.5 hover:text-[#0a3621]",
+              isActive ? "text-[#0a3621] font-bold border-b-2 border-[#244d36]" : "text-neutral-600"
+            ]}
+          >
+            {link.label}
+          </a>
+        );
+      })}
+    </nav>
+
+    <!-- Acciones Directas de Contacto (Buyer Persona) -->
+    <div class="flex items-center gap-4 shrink-0">
+      <a
+        class="hidden lg:flex items-center gap-2 font-medium text-sm text-[#0a3621] hover:text-[#406838] transition-colors"
+        href="tel:+34638717215"
+      >
+        <span class="material-symbols-outlined text-lg text-[#244d36]">phone_in_talk</span>
+        <span>+34 638 71 72 15</span>
+      </a>
+
+      <a
+        class="inline-flex items-center justify-center bg-[#244d36] hover:bg-[#0a3621] text-white font-medium text-sm px-5 py-2.5 rounded-lg transition-all shadow-sm hover:shadow"
+        href="/contacto"
+      >
+        Pedir presupuesto
+      </a>
+    </div>
+  </div>
+</header>

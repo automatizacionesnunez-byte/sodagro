@@ -1,0 +1,31 @@
+---
+const services = [
+  { title: "[Nombre del servicio]", description: "[Descripción con resultado concreto]", price: "[Precio o rango]" },
+];
+---
+
+<section id="servicios-detail" class="py-16 md:py-24">
+  <div class="mx-auto max-w-[var(--max-width)] px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-[var(--font-display)] text-3xl font-bold tracking-tight text-[var(--color-text)]">
+        Servicios
+      </h2>
+      <p class="mt-4 text-lg text-[var(--color-text-muted)]">
+        Cada servicio con precio transparente y resultado medible.
+      </p>
+    </div>
+    <div class="mt-16 space-y-8">
+      {services.map((service) => (
+        <article class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+            <div>
+              <h3 class="font-semibold text-[var(--color-text)]">{service.title}</h3>
+              <p class="mt-2 text-[var(--color-text-muted)]">{service.description}</p>
+            </div>
+            <span class="whitespace-nowrap text-sm font-medium text-[var(--color-primary)]">{service.price}</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

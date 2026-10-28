@@ -1,0 +1,5 @@
+# WEBS Factory generated site
+# Team: [Nombre del equipo]
+# Agency: [Nombre de la agencia]
+# Stack: Astro, Tailwind CSS, TypeScript
+# Version: 1.0.0

@@ -1,0 +1,36 @@
+---
+interface Props {
+  src: string;
+  mobileSrc?: string;
+  alt: string;
+  overlay?: "soft" | "dark" | "none";
+  priority?: boolean;
+}
+
+const { src, mobileSrc, alt, overlay = "dark", priority = false } = Astro.props;
+const overlayClass = {
+  soft: "bg-black/20",
+  dark: "bg-black/48",
+  none: "bg-transparent",
+}[overlay];
+---
+
+<div class="photo-background">
+  <picture>
+    {mobileSrc && <source media="(max-width: 767px)" srcset={mobileSrc} />}
+    <img
+      src={src}
+      alt={alt}
+      width="1920"
+      height="1280"
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+      fetchpriority={priority ? "high" : "auto"}
+      class="absolute inset-0 h-full w-full object-cover"
+    />
+  </picture>
+  <div class={`absolute inset-0 ${overlayClass}`} aria-hidden="true"></div>
+  <div class="relative z-10">
+    <slot />
+  </div>
+</div>

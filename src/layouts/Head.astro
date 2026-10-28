@@ -1,0 +1,207 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  twitterCard?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description,
+  ogImage = "/assets/asset-09.jpg",
+  twitterCard = "summary_large_image",
+  canonical,
+} = Astro.props;
+const siteUrl = Astro.site ?? new URL("http://localhost:4321");
+const currentUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).href;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title}</title>
+<meta name="description" content={description} />
+{canonical && <link rel="canonical" href={canonical} />}
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={currentUrl} />
+<meta property="og:image" content={new URL(ogImage, siteUrl).href} />
+<meta name="twitter:card" content={twitterCard} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(ogImage, siteUrl).href} />
+
+<!-- Google Fonts: Manrope & Inter + Material Symbols Outlined -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="theme-color" content="#244d36" />
+
+<!-- Base Styling -->
+<style is:inline>
+  @layer base {
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      overscroll-behavior: none;
+    }
+    main > :first-child {
+      margin-top: 0 !important;
+    }
+    main > :last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<!-- Tailwind CDN with exact Stitch Design Tokens -->
+<script is:inline src="https://cdn.tailwindcss.com"></script>
+<script is:inline id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-tertiary-fixed-variant": "#61401a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-primary": "#a4d1b3",
+        "on-error-container": "#93000a",
+        "primary-container": "#244d36",
+        "on-secondary-fixed": "#002201",
+        "outline-variant": "#c1c8c1",
+        "on-background": "#171d18",
+        "on-primary-container": "#91bd9f",
+        "on-secondary-container": "#446c3c",
+        "primary-fixed-dim": "#a4d1b3",
+        "on-tertiary-fixed": "#2c1700",
+        "primary-fixed": "#bfedce",
+        "surface-bright": "#f5fbf3",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#eff5ed",
+        "secondary-container": "#beecb0",
+        "tertiary-fixed-dim": "#eebe8d",
+        "surface-container": "#eaf0e8",
+        "tertiary-container": "#5f3e19",
+        "on-primary-fixed": "#002111",
+        "on-primary": "#ffffff",
+        "inverse-surface": "#2c322d",
+        "on-primary-fixed-variant": "#264f38",
+        "secondary-fixed": "#c1efb3",
+        "surface-variant": "#dee4dc",
+        "error": "#ba1a1a",
+        "on-secondary-fixed-variant": "#294f23",
+        "surface": "#f5fbf3",
+        "on-error": "#ffffff",
+        "background": "#f5fbf3",
+        "outline": "#717972",
+        "tertiary-fixed": "#ffdcbc",
+        "secondary": "#406838",
+        "on-surface-variant": "#414943",
+        "tertiary": "#452805",
+        "surface-container-high": "#e4eae2",
+        "on-tertiary-container": "#d8aa7b",
+        "surface-dim": "#d6dcd4",
+        "surface-tint": "#3e674e",
+        "surface-container-highest": "#dee4dc",
+        "secondary-fixed-dim": "#a5d398",
+        "on-surface": "#171d18",
+        "primary": "#0a3621",
+        "on-tertiary": "#ffffff",
+        "inverse-on-surface": "#edf2ea",
+        "on-secondary": "#ffffff"
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      spacing: {
+        "margin-mobile": "1rem",
+        "space-xl": "2.5rem",
+        "gutter-mobile": "1rem",
+        "margin": "2rem",
+        "space-xxl": "4rem",
+        "margin-desktop": "4rem",
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1.5rem",
+        "gutter": "1.5rem",
+        "space-md": "1rem",
+        "space-section": "6rem"
+      },
+      fontFamily: {
+        "body-sm": ["Inter", "sans-serif"],
+        "headline-lg": ["Manrope", "sans-serif"],
+        "headline-md-mobile": ["Manrope", "sans-serif"],
+        "display-mobile": ["Manrope", "sans-serif"],
+        "headline-lg-mobile": ["Manrope", "sans-serif"],
+        "headline-sm": ["Manrope", "sans-serif"],
+        "label-md": ["Inter", "sans-serif"],
+        "label-lg": ["Inter", "sans-serif"],
+        "label-caption": ["Inter", "sans-serif"],
+        "headline-md": ["Manrope", "sans-serif"],
+        "display": ["Manrope", "sans-serif"],
+        "body-md": ["Inter", "sans-serif"],
+        "body-lg": ["Inter", "sans-serif"]
+      },
+      fontSize: {
+        "body-sm": ["14px", { lineHeight: "20px", letterSpacing: "0.005em", fontWeight: "400" }],
+        "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "700" }],
+        "headline-md-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "display-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "800" }],
+        "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }],
+        "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0", fontWeight: "600" }],
+        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+        "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+        "label-caption": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "500" }],
+        "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "display": ["52px", { lineHeight: "60px", letterSpacing: "-0.02em", fontWeight: "800" }],
+        "body-md": ["16px", { lineHeight: "24px", letterSpacing: "0", fontWeight: "400" }],
+        "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }]
+      }
+    }
+  }
+};
+</script>
+
+<!-- Schema: LocalBusiness / Organization -->
+<script is:inline type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SODAGRO — Soluciones y Desarrollos Agrícolas",
+  "image": "https://sodagro.es/assets/asset-01.jpg",
+  "telephone": "+34638717215",
+  "url": "https://sodagro.es",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lugar Huerta Vado del Mor, 131",
+    "addressLocality": "Cabra",
+    "addressRegion": "Córdoba",
+    "postalCode": "14940",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.4725,
+    "longitude": -4.4342
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }
+}
+</script>

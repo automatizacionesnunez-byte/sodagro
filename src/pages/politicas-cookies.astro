@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const seo = {
+  title: "Política de Cookies | SODAGRO — Soluciones y Desarrollos Agrícolas",
+  description: "Información sobre el uso y configuración de cookies en el sitio web de SODAGRO conforme a la LSSI-CE y la AEPD.",
+  canonical: "https://sodagro.es/politicas-cookies"
+};
+---
+
+<Layout
+  title={seo.title}
+  description={seo.description}
+  canonical={seo.canonical}
+>
+  <main id="main-content" class="w-full pt-28 pb-20 bg-surface">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <!-- Encabezado -->
+      <div class="border-b border-neutral-200 pb-8 mb-10">
+        <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">
+          Política de Cookies
+        </h1>
+        <p class="mt-3 text-sm text-neutral-600">
+          En cumplimiento del artículo 22.2 de la Ley 34/2002 (LSSI-CE) y de la Guía de Cookies de la Agencia Española de Protección de Datos (AEPD).
+        </p>
+      </div>
+
+      <!-- Contenido Legal Cookies -->
+      <div class="space-y-8 text-neutral-700 leading-relaxed text-sm sm:text-base">
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">1. ¿Qué son las Cookies?</h2>
+          <p>Una cookie es un pequeño fichero de texto que se descarga en su dispositivo (ordenador, tablet o teléfono móvil) al acceder a determinadas páginas web. Las cookies permiten a un sitio web almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo para mejorar la experiencia de navegación técnica.</p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">2. Tipos de Cookies que Utiliza este Sitio Web</h2>
+          <p>El sitio web de <strong>SODAGRO</strong> utiliza únicamente cookies técnicas estrictamente necesarias y cookies analíticas de rendimiento respetuosas con la privacidad:</p>
+          
+          <div class="space-y-4">
+            <div class="bg-surface-container-low p-4 rounded-xl border border-neutral-200">
+              <h3 class="font-bold text-primary">A) Cookies Técnicas y Estrictamente Necesarias</h3>
+              <p class="text-sm mt-1">Son aquellas que permiten al usuario la navegación a través del Sitio Web y la utilización de las diferentes opciones o servicios que en él existen (por ejemplo, controlar el tráfico y la comunicación de datos, recordar elementos de solicitud o gestionar la seguridad).</p>
+            </div>
+
+            <div class="bg-surface-container-low p-4 rounded-xl border border-neutral-200">
+              <h3 class="font-bold text-primary">B) Cookies de Preferencias o Personalización</h3>
+              <p class="text-sm mt-1">Permiten recordar información para que el usuario acceda al servicio con determinadas características que pueden diferenciar su experiencia (por ejemplo, el idioma o la resolución de pantalla).</p>
+            </div>
+
+            <div class="bg-surface-container-low p-4 rounded-xl border border-neutral-200">
+              <h3 class="font-bold text-primary">C) Cookies Analíticas (Métricas Agregadas)</h3>
+              <p class="text-sm mt-1">Permiten cuantificar el número de usuarios y realizar la medición y análisis estadístico de la utilización del portal, siempre de forma agregada y anónima, con el fin de optimizar los contenidos agrícolas y la velocidad de carga.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">3. ¿Cómo Desactivar o Eliminar las Cookies?</h2>
+          <p>El usuario puede en cualquier momento permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador o dispositivo:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Google Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies y otros datos de sitios.</li>
+            <li><strong>Mozilla Firefox:</strong> Opciones &gt; Privacidad y Seguridad &gt; Cookies y datos del sitio.</li>
+            <li><strong>Apple Safari:</strong> Preferencias &gt; Privacidad &gt; Bloquear todas las cookies.</li>
+            <li><strong>Microsoft Edge:</strong> Configuración &gt; Permisos del sitio &gt; Cookies y datos del sitio.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">4. Actualizaciones y Dudas</h2>
+          <p>SODAGRO puede modificar esta Política de Cookies en función de nuevas exigencias legislativas o reglamentarias. Para cualquier consulta sobre nuestra política de cookies, puedes escribir a <strong>info@sodagro.es</strong>.</p>
+        </section>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-neutral-200 flex justify-between items-center text-sm text-neutral-500">
+        <a href="/politicas-privacidad" class="text-primary hover:underline font-semibold flex items-center gap-1">
+          ← Política de Privacidad
+        </a>
+        <a href="/" class="text-primary hover:underline font-semibold">
+          Volver al Inicio →
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

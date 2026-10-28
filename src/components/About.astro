@@ -1,0 +1,57 @@
+---
+const about = {
+  title: "Quiénes somos",
+  description: "[Descripción de la empresa, historia y valores]",
+  mission: "[Declaración de misión]",
+  vision: "[Declaración de visión]",
+  values: [
+    { title: "Valor 1", description: "[Descripción del valor]" },
+    { title: "Valor 2", description: "[Descripción del valor]" },
+    { title: "Valor 3", description: "[Descripción del valor]" },
+  ],
+};
+---
+
+<section id="sobre" class="py-16 md:py-24">
+  <div class="mx-auto max-w-[var(--max-width)] px-6">
+    <div class="grid gap-16 md:grid-cols-2 md:items-start">
+      <div>
+        <img
+          src="/images/about.webp"
+          alt="Espacio de trabajo con luz natural"
+          width="1600"
+          height="1100"
+          loading="lazy"
+          decoding="async"
+          class="mb-8 aspect-[4/3] w-full rounded-2xl object-cover"
+        />
+        <h2 class="font-[var(--font-display)] text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+          {about.title}
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-text-muted)]">
+          {about.description}
+        </p>
+      </div>
+      <div class="space-y-8">
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <h3 class="font-[var(--font-display)] text-lg font-bold text-[var(--color-text)]">Misión</h3>
+          <p class="mt-2 text-[var(--color-text-muted)]">{about.mission}</p>
+        </div>
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <h3 class="font-[var(--font-display)] text-lg font-bold text-[var(--color-text)]">Visión</h3>
+          <p class="mt-2 text-[var(--color-text-muted)]">{about.vision}</p>
+        </div>
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <h3 class="font-[var(--font-display)] text-lg font-bold text-[var(--color-text)]">Valores</h3>
+          <ul class="mt-2 space-y-2 text-[var(--color-text-muted)]">
+            {about.values.map((v) => (
+              <li>
+                <strong class="text-[var(--color-text)]">{v.title}:</strong> {v.description}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

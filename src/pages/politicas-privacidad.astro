@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const seo = {
+  title: "Política de Privacidad | SODAGRO — Soluciones y Desarrollos Agrícolas",
+  description: "Información sobre el tratamiento de datos personales conforme al Reglamento General de Protección de Datos (RGPD) y la LOPDGDD.",
+  canonical: "https://sodagro.es/politicas-privacidad"
+};
+---
+
+<Layout
+  title={seo.title}
+  description={seo.description}
+  canonical={seo.canonical}
+>
+  <main id="main-content" class="w-full pt-28 pb-20 bg-surface">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <!-- Encabezado -->
+      <div class="border-b border-neutral-200 pb-8 mb-10">
+        <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">
+          Política de Privacidad y Protección de Datos
+        </h1>
+        <p class="mt-3 text-sm text-neutral-600">
+          En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD).
+        </p>
+      </div>
+
+      <!-- Contenido Legal RGPD -->
+      <div class="space-y-8 text-neutral-700 leading-relaxed text-sm sm:text-base">
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">1. Responsable del Tratamiento de tus Datos</h2>
+          <div class="bg-surface-container-low p-5 rounded-xl border border-neutral-200 space-y-1">
+            <p><strong>Identidad:</strong> SODAGRO (Soluciones y Desarrollos Agrícolas)</p>
+            <p><strong>Dirección postal:</strong> Lugar Huerta Vado del Mor, 131, 14940 Cabra (Córdoba), España</p>
+            <p><strong>Teléfono / WhatsApp:</strong> +34 638 71 72 15</p>
+            <p><strong>Correo electrónico de privacidad:</strong> info@sodagro.es</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">2. Finalidad del Tratamiento</h2>
+          <p>En SODAGRO tratamos la información que nos facilitan las personas interesadas con las siguientes finalidades:</p>
+          <ul class="list-disc pl-6 space-y-1.5">
+            <li><strong>Gestión de solicitudes de presupuesto y consultas:</strong> Atender las peticiones de información sobre servicios agrícolas, trámites PAC, plantaciones o recolección mecanizada recibidas a través de nuestros formularios o canales de mensajería (WhatsApp/teléfono).</li>
+            <li><strong>Ejecución y gestión de servicios contratados:</strong> Coordinación de trabajos de campo, elaboración de planes agronómicos y facturación administrativa.</li>
+            <li><strong>Comunicaciones operativas:</strong> Información técnica sobre el estado de su explotación o campañas agrícolas activas expresamente autorizadas.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">3. Base Legal y Legitimación</h2>
+          <p>La base jurídica que legitima el tratamiento de tus datos es:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Consentimiento expreso:</strong> Al enviar el formulario de contacto o presupuesto (art. 6.1.a RGPD).</li>
+            <li><strong>Aplicación de medidas precontractuales o contractuales:</strong> Para presupuestar y ejecutar los servicios agrícolas solicitados (art. 6.1.b RGPD).</li>
+            <li><strong>Cumplimiento de obligaciones legales:</strong> En materia fiscal, contable y administrativa agraria (art. 6.1.c RGPD).</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">4. Plazo de Conservación de los Datos</h2>
+          <p>Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o durante el tiempo estrictamente necesario para cumplir con las finalidades para las que fueron recabados y con las obligaciones legales aplicables.</p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">5. Cesión de Datos a Terceros</h2>
+          <p>SODAGRO no cederá ni venderá tus datos a terceros con fines comerciales. Los datos únicamente podrán ser comunicados a administraciones públicas agrarias (Junta de Andalucía / FEGA) en el marco de la tramitación de expedientes PAC expresamente encomendados por el titular de la explotación.</p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-primary">6. Derechos del Usuario (ARCO+)</h2>
+          <p>Cualquier persona tiene derecho a obtener confirmación sobre si en SODAGRO estamos tratando datos personales que le conciernan. Puedes ejercer en cualquier momento los siguientes derechos:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Acceso:</strong> Conocer qué datos personales tuyos estamos tratando.</li>
+            <li><strong>Rectificación:</strong> Solicitar la corrección de datos inexactos.</li>
+            <li><strong>Supresión:</strong> Solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
+            <li><strong>Oposición y Limitación:</strong> Solicitar que tus datos no sean tratados para finalidades específicas.</li>
+            <li><strong>Portabilidad:</strong> Obtener tus datos en formato electrónico estructurado.</li>
+          </ul>
+          <p>Para ejercer estos derechos, basta con remitir un correo electrónico a <strong>info@sodagro.es</strong> o una solicitud por escrito a nuestra sede en Cabra (Córdoba), acompañando copia de su documento de identidad.</p>
+        </section>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-neutral-200 flex justify-between items-center text-sm text-neutral-500">
+        <a href="/aviso-legal" class="text-primary hover:underline font-semibold flex items-center gap-1">
+          ← Aviso Legal
+        </a>
+        <a href="/politicas-cookies" class="text-primary hover:underline font-semibold">
+          Política de Cookies →
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

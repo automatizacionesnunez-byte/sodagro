@@ -1,0 +1,33 @@
+---
+interface Props {
+  src: string;
+  poster: string;
+  alt: string;
+  overlay?: "soft" | "dark" | "none";
+}
+
+const { src, poster, alt, overlay = "dark" } = Astro.props;
+const overlayClass = {
+  soft: "bg-black/20",
+  dark: "bg-black/48",
+  none: "bg-transparent",
+}[overlay];
+---
+
+<div class="video-background">
+  <video
+    class="absolute inset-0 h-full w-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster={poster}
+    aria-label={alt}
+  >
+    <source src={src} type="video/mp4" />
+  </video>
+  <div class={`absolute inset-0 ${overlayClass}`} aria-hidden="true"></div>
+  <div class="relative z-10">
+    <slot />
+  </div>
+</div>

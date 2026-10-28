@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --color-primary: #0a3621;
+  --color-primary-container: #244d36;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #91bd9f;
+  
+  --color-secondary: #406838;
+  --color-secondary-container: #beecb0;
+  --color-on-secondary-container: #446c3c;
+  
+  --color-tertiary: #452805;
+  --color-tertiary-container: #5f3e19;
+  --color-tertiary-fixed: #ffdcbc;
+  --color-tertiary-fixed-dim: #eebe8d;
+  --color-on-tertiary-fixed: #2c1700;
+  
+  --color-surface: #f5fbf3;
+  --color-surface-dim: #d6dcd4;
+  --color-surface-bright: #f5fbf3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff5ed;
+  --color-surface-container: #eaf0e8;
+  --color-surface-container-high: #e4eae2;
+  --color-surface-container-highest: #dee4dc;
+  --color-on-surface: #171d18;
+  --color-on-surface-variant: #414943;
+  
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #f5fbf3;
+  color: #171d18;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}

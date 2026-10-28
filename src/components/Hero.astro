@@ -1,0 +1,42 @@
+---
+import PhotoBackground from "./PhotoBackground.astro";
+
+const hero = {
+  title: "[Título principal]",
+  subtitle: "[Subtítulo que explica el valor de la empresa]",
+  cta: "Solicitar presupuesto",
+  ctaHref: "/contacto",
+};
+---
+
+<section class="relative mx-auto mt-[var(--header-height)] max-w-[var(--max-width)] px-6 py-16 md:py-24 md:pt-24">
+  <div class="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
+    <div class="order-2 md:order-1">
+      <h1 class="font-[var(--font-display)] text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl md:text-6xl lg:text-7xl">
+        {hero.title}
+      </h1>
+      <p class="mt-6 text-lg text-[var(--color-text-muted)] md:text-xl">
+        {hero.subtitle}
+      </p>
+      <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+        <a
+          href={hero.ctaHref}
+          class="inline-block rounded-full bg-[var(--color-primary)] px-8 py-3 text-base font-medium text-white transition-colors hover:bg-[var(--color-primary-hover)]"
+        >
+          {hero.cta}
+        </a>
+      </div>
+    </div>
+    <div class="order-1 md:order-2">
+      <div class="relative aspect-[4/5] overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] md:aspect-[4/5]">
+        <PhotoBackground
+          src="/images/hero.webp"
+          mobileSrc="/images/hero-mobile.webp"
+          alt="Interior luminoso de un estudio de trabajo"
+          overlay="soft"
+          priority
+        />
+      </div>
+    </div>
+  </div>
+</section>

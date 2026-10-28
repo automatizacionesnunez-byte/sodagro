@@ -1,0 +1,31 @@
+---
+const cta = {
+  title: "Comencemos",
+  description: "Hablemos de tu proyecto y encontremos la mejor solución.",
+  cta: "Solicitar presupuesto",
+  ctaHref: "/contacto",
+};
+---
+
+<section class="py-16 md:py-24">
+  <div class="mx-auto max-w-[var(--max-width)] px-6">
+    <div class="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
+      <div>
+        <h2 class="font-[var(--font-display)] text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl md:text-5xl">
+          {cta.title}
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-text-muted)]">
+          {cta.description}
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <a
+          href={cta.ctaHref}
+          class="inline-block rounded-full bg-[var(--color-primary)] px-10 py-4 text-base font-medium text-white transition-colors hover:bg-[var(--color-primary-hover)]"
+        >
+          {cta.cta}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
