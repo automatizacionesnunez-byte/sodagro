@@ -24,10 +24,11 @@ scripts/         Deploy y setup VPS
 .github/         CI/CD con GitHub Actions
 ```
 
-## Despliegue en VPS
+## Despliegue en Cloudflare
 
-Prepara el servidor: `bash scripts/setup-server.sh`
-Despliega: `bash scripts/deploy.sh`
+El proyecto está configurado para despliegue automático en Cloudflare Pages / Workers:
+- `wrangler.json` gestiona la configuración de assets y el comando de build automático (`npm run build`).
+- Consulta `AGENTS.md` para conocer las reglas críticas de despliegue antes de realizar push a `main`.
 
 ## Variables de entorno
 
