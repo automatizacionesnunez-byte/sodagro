@@ -24,6 +24,7 @@ El sector de servicios agrícolas y gestión integral de fincas en España prese
    - *Debilidad:* Nula presencia web profesional, sin capacidad técnica agronómica integral ni garantías de cumplimiento documental/fitosanitario.
 
 ### Ventaja Competitiva de SODAGRO (Oportunidad SEO/GEO)
+
 SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa con **maquinaria propia, ingenieros agrónomos y servicio 360°**. La estrategia SEO debe captar tanto la intención transaccional directa de labores operativas (recolección, poda, plantación) como la asesoría técnica (PAC, cuaderno de campo, planes de abonado).
 
 ---
@@ -31,10 +32,11 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ## 2. Matriz de Palabras Clave por Pilares de Servicio
 
 ### Pilar 0: Marca y Transversales (Home `/`)
+
 *Intención: Navegacional y Comercial Amplia*
 
 | Palabra Clave | Intención | Volumen Est. (España) | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `empresa de servicios agricolas` | Comercial | 1.300 - 2.400 / mes | Media-Alta | 🔥 Alta |
 | `servicios agricolas integrales` | Comercial | 480 - 1.000 / mes | Media | 🔥 Alta |
 | `gestion de fincas agricolas` | Comercial | 590 - 1.200 / mes | Media | 🔥 Alta |
@@ -46,10 +48,11 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ---
 
 ### Pilar A: Gestión Agraria, PAC y Subvenciones (`/servicios/gestion-agraria-pac`)
+
 *Intención: Comercial e Informacional Técnica*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `tramitacion ayudas pac` | Transaccional | 720 - 1.600 / mes (picos campaña) | Media-Alta | 🔥 Alta |
 | `gestion de la pac empresa` | Transaccional | 320 - 700 / mes | Media | 🔥 Alta |
 | `subvenciones modernizacion explotaciones agricolas` | Comercial | 480 - 1.100 / mes | Media | Media |
@@ -61,10 +64,11 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ---
 
 ### Pilar B: Viveros y Nuevas Plantaciones (`/servicios/viveros-plantaciones`)
+
 *Intención: Transaccional (Búsqueda de presupuesto de inversión)*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `plantacion de olivos llave en mano` | Transaccional | 390 - 850 / mes | Media | 🔥 Muy Alta |
 | `precio plantacion olivar por hectarea` | Comercial / Transaccional | 720 - 1.500 / mes | Media | 🔥 Muy Alta |
 | `nuevas plantaciones de almendros` | Comercial | 480 - 1.000 / mes | Media-Baja | Alta |
@@ -76,25 +80,27 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ---
 
 ### Pilar C: Trabajos Agrícolas y Mantenimiento (`/servicios/trabajos-mantenimiento`)
+
 *Intención: Transaccional Operativa*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `mantenimiento de olivares empresa` | Transaccional | 390 - 800 / mes | Media-Baja | 🔥 Alta |
 | `poda de olivar mecanizada` | Transaccional | 480 - 1.100 / mes | Media | Alta |
 | `poda de formacion almendro` | Informacional / Transaccional | 260 - 580 / mes | Baja | ⭐ Quick Win |
 | `desbroce y triturado restos de poda` | Transaccional | 590 - 1.300 / mes | Baja | ⭐ Quick Win |
-| `preparacion del suelo para siembra y plantacion`| Transaccional | 320 - 700 / mes | Baja | Media |
+| `preparacion del suelo para siembra y plantacion` | Transaccional | 320 - 700 / mes | Baja | Media |
 | `instalacion de riego por goteo en olivar` | Transaccional | 480 - 1.000 / mes | Media | Alta |
 | `mantenimiento de calles agricolas` | Transaccional | 110 - 240 / mes | Muy Baja | ⭐ Quick Win |
 
 ---
 
 ### Pilar D: Fertilización y Sanidad Vegetal (`/servicios/fertilizacion-sanidad`)
+
 *Intención: Transaccional y Consulta Técnica*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `tratamientos fitosanitarios olivar empresa` | Transaccional | 320 - 700 / mes | Media-Baja | 🔥 Alta |
 | `plan de abonado para olivar` | Informacional / Comercial | 720 - 1.600 / mes | Media | Alta |
 | `aplicacion de abonos y fertilizantes a terceros` | Transaccional | 210 - 480 / mes | Baja | ⭐ Quick Win |
@@ -105,10 +111,11 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ---
 
 ### Pilar E: Recolección y Maquinaria Agrícola (`/servicios/recoleccion-maquinaria`)
+
 *Intención: Altamente Transaccional (Contratación de cuadrillas y maquinaria)*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `recoleccion mecanizada de aceituna` | Transaccional | 1.200 - 2.900 / mes (oct-feb) | Media-Alta | 🔥 Máxima |
 | `recoleccion con paraguas invertido precio` | Transaccional | 480 - 1.100 / mes | Media | 🔥 Máxima |
 | `empresa recoleccion de almendra` | Transaccional | 590 - 1.400 / mes (ago-oct) | Media-Baja | 🔥 Máxima |
@@ -119,10 +126,11 @@ SODAGRO no es un simple maquilero ni una gestoría de oficina. Es una empresa co
 ---
 
 ### Pilar F: Gestión Integral 360° (`/servicios/gestion-integral-360`)
+
 *Intención: Búsqueda de socio estratégico para fincas medianas y grandes*
 
 | Palabra Clave | Intención | Volumen Est. | Dificultad / Competencia | Prioridad |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `gestion integral de explotaciones agricolas` | Comercial / Transaccional | 420 - 900 / mes | Media-Baja | 🔥 Alta |
 | `administracion de fincas rusticas olivar` | Transaccional | 280 - 620 / mes | Baja | ⭐ Quick Win |
 | `socio operativo agricola espana` | Comercial | 90 - 210 / mes | Muy Baja | Alta conversión |

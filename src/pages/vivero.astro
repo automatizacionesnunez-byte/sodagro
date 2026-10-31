@@ -1,0 +1,428 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const seo = {
+  title: "Vivero y Plantaciones Agrícolas en Andalucía | SODAGRO",
+  description: "Vivero oficial y multiplicación certificada de olivos (Picual, Hojiblanca, Arbequina), almendros y pistachos con pasaporte fitosanitario y plantación llave en mano.",
+  canonical: "https://sodagro.es/vivero",
+  ogImage: "/assets/nursery-hd.jpg"
+};
+
+const varieties = [
+  {
+    category: "Olivo Certificado",
+    icon: "eco",
+    items: [
+      { name: "Picual", desc: "Máxima productividad, excelente rendimiento graso y alta rusticidad frente a bajas temperaturas." },
+      { name: "Hojiblanca", desc: "Variedad de doble aptitud (aceite y mesa), gran resistencia a sequía y suelos calizos." },
+      { name: "Arbequina", desc: "Entrada rápida en producción, porte reducido ideal para marcos intensivos y en seto." },
+      { name: "Manzanilla & Gordal", desc: "Variedades selectas de mesa con calibre superior y alta demanda comercial." }
+    ]
+  },
+  {
+    category: "Almendro Injertado",
+    icon: "psychiatry",
+    items: [
+      { name: "Guara", desc: "Autofértil, floración tardía que esquiva heladas y alto rendimiento al descascarillado." },
+      { name: "Avijor (Lauranne)", desc: "Floración tardía, alta productividad homogénea y cáscara dura con resistencia a pájaros." },
+      { name: "Penta", desc: "Floración extra-tardía (15-20 días tras Guara), perfecta para zonas frías o cotas elevadas." }
+    ]
+  },
+  {
+    category: "Pistacho sobre Pie UCB1",
+    icon: "forest",
+    items: [
+      { name: "Kerman (Hembra)", desc: "Calibre grande, excelente porcentaje de frutos abiertos y gran valor en mercado internacional." },
+      { name: "Sirora (Hembra)", desc: "Mayor precocidad que Kerman, adaptada a primaveras más cortas con vigor equilibrado." },
+      { name: "Peter & C-Especial (Machos)", desc: "Polinizadores de máxima coincidencia floral y dispersión de polen garantizada." }
+    ]
+  }
+];
+
+const steps = [
+  {
+    num: "01",
+    title: "Análisis de Suelo y Marco",
+    desc: "Estudio agronómico del terreno, textura, pendiente y climatología para definir el clon, patrón y densidad óptima."
+  },
+  {
+    num: "02",
+    title: "Preparación Profunda del Terreno",
+    desc: "Subsolado a fondo, despedregado, pase de rastro y nivelación con tecnología láser para una cama de siembra perfecta."
+  },
+  {
+    num: "03",
+    title: "Plantación Mecanizada GPS RTK",
+    desc: "Alineación milimétrica guiada por satélite para garantizar calles paralelas aptas para mecanización futura."
+  },
+  {
+    num: "04",
+    title: "Riego, Tutor y Protector",
+    desc: "Instalación de tuberías con goteros autocompensantes, tutores de bambú tratados y protectores conejeros anti-roedores."
+  },
+  {
+    num: "05",
+    title: "Garantía de Arraigo 100%",
+    desc: "Supervisión técnica de prendimiento durante la primera campaña y reposición de marras sin coste adicional."
+  }
+];
+---
+
+<Layout {...seo}>
+  <main class="w-full bg-[#f9faf8] text-[#1b2f23]">
+    <!-- HERO SECTION VIVERO -->
+    <section class="relative bg-gradient-to-b from-[#1b2f23] to-[#244d36] text-white pt-32 pb-20 px-6 lg:px-12 overflow-hidden">
+      <div class="absolute inset-0 opacity-15 mix-blend-overlay">
+        <img src="/assets/nursery-hd.jpg" alt="Vivero SODAGRO de plantones" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+        <div class="w-full lg:w-7/12 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-xs font-semibold text-[#beecb0] uppercase tracking-wider">
+            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+            Vivero Oficial & Multiplicador Registrado
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+            Vivero y Plantaciones de Alto Rendimiento en Andalucía
+          </h1>
+
+          <p class="text-base md:text-lg text-neutral-200/90 max-w-2xl leading-relaxed">
+            Suministro certificado de plantones de olivar, almendro y pistacho con pasaporte fitosanitario oficial. Proyectos integrales de plantación con guiado GPS RTK, riego por goteo y garantía contractual de arraigo.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href="#reserva-vivero"
+              class="inline-flex items-center gap-2 bg-[#beecb0] hover:bg-[#a5df94] text-[#0a3621] font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg"
+            >
+              <span>Pedir presupuesto de plantones</span>
+              <span class="material-symbols-outlined text-lg">arrow_downward</span>
+            </a>
+
+            <a
+              href="https://wa.me/34638717215?text=Hola%20SODAGRO%2C%20quiero%20consultar%20disponibilidad%20y%20precios%20de%20plantones%20de%20vuestro%20vivero"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-semibold text-sm px-5 py-3.5 rounded-xl backdrop-blur-sm border border-white/20 transition-all"
+            >
+              <span class="material-symbols-outlined text-lg">chat</span>
+              <span>Consultar disponibilidad</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-xs">
+            <div>
+              <p class="font-extrabold text-xl text-[#beecb0]">100%</p>
+              <p class="text-neutral-300">Sanidad certificada libre de Xylella</p>
+            </div>
+            <div>
+              <p class="font-extrabold text-xl text-[#beecb0]">GPS RTK</p>
+              <p class="text-neutral-300">Alineación milimétrica en campo</p>
+            </div>
+            <div>
+              <p class="font-extrabold text-xl text-[#beecb0]">Garantía</p>
+              <p class="text-neutral-300">Reposición de marras en campaña</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARJETA EMBLEMA OFICIAL SODAGRO VIVERO -->
+        <div class="w-full lg:w-5/12 flex flex-col items-center">
+          <div class="w-full max-w-md bg-white rounded-2xl p-8 shadow-2xl text-neutral-800 border border-neutral-100 flex flex-col items-center text-center space-y-5">
+            <div class="w-32 h-32 bg-neutral-50 rounded-2xl p-3 border border-neutral-200 flex items-center justify-center shadow-inner">
+              <img
+                src="/assets/logo-vivero-oficial.jpg"
+                alt="Logo Oficial SODAGRO Vivero y Plantaciones"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold text-[#244d36] bg-[#eef7ed] px-3 py-1 rounded-full uppercase tracking-wider">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">shield</span>
+                Sello Oficial de Calidad
+              </span>
+              <h2 class="text-xl font-bold text-[#0a3621]">SODAGRO Viveros</h2>
+              <p class="text-xs text-neutral-600 leading-relaxed">
+                Producción controlada bajo estrictos estándares agronómicos. Trazabilidad clonal directa desde el origen en Cabra (Córdoba) para toda Andalucía y España.
+              </p>
+            </div>
+
+            <div class="w-full border-t border-neutral-100 pt-4 flex flex-col gap-2 text-xs text-left text-neutral-700">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#244d36] text-sm">check_circle</span>
+                <span>Pasaporte fitosanitario oficial expedido por la Junta de Andalucía</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#244d36] text-sm">check_circle</span>
+                <span>Portainjertos certificados de alto vigor y resistencia</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#244d36] text-sm">check_circle</span>
+                <span>Entrega directa a pie de finca en camiones acondicionados</span>
+              </div>
+            </div>
+
+            <a
+              href="tel:+34638717215"
+              class="w-full inline-flex items-center justify-center gap-2 bg-[#244d36] hover:bg-[#0a3621] text-white py-3 rounded-xl font-semibold text-sm transition-all"
+            >
+              <span class="material-symbols-outlined text-base">call</span>
+              <span>Llamar al vivero: +34 638 71 72 15</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO DE VARIEDADES DISPONIBLES -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="text-xs font-bold text-[#244d36] uppercase tracking-wider bg-[#eef7ed] px-3 py-1 rounded-md">
+          Especies y Clones Seleccionados
+        </span>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-[#0a3621]">
+          Catálogo de Planta Certificada en Vivero
+        </h2>
+        <p class="text-neutral-600 text-sm md:text-base leading-relaxed">
+          Disponemos de variedades adaptadas a marcos tradicionales, intensivos y en seto. Todas nuestras plantas pasan un riguroso control serológico y genético.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {varieties.map((v) => (
+          <div class="bg-white rounded-2xl p-8 border border-neutral-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="space-y-6">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-[#eef7ed] text-[#244d36] flex items-center justify-center">
+                  <span class="material-symbols-outlined text-2xl">{v.icon}</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#0a3621]">{v.category}</h3>
+              </div>
+
+              <div class="space-y-4">
+                {v.items.map((it) => (
+                  <div class="p-4 rounded-xl bg-neutral-50 border border-neutral-100">
+                    <h4 class="font-bold text-sm text-[#244d36] flex items-center justify-between">
+                      <span>{it.name}</span>
+                      <span class="material-symbols-outlined text-xs text-[#244d36]">verified</span>
+                    </h4>
+                    <p class="text-xs text-neutral-600 mt-1 leading-relaxed">{it.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-neutral-100 mt-6">
+              <a
+                href={`https://wa.me/34638717215?text=Hola%20SODAGRO%2C%20quiero%20consultar%20disponibilidad%20de%20planta%20de%20${encodeURIComponent(v.category)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 border border-[#244d36] text-[#244d36] hover:bg-[#244d36] hover:text-white py-2.5 rounded-lg text-xs font-semibold transition-colors"
+              >
+                <span>Consultar stock de {v.category.toLowerCase()}</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- PROCESO LLAVE EN MANO -->
+    <section class="bg-white border-y border-neutral-200/70 py-20 px-6 lg:px-12">
+      <div class="max-w-7xl mx-auto space-y-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-[#244d36] uppercase tracking-wider bg-[#eef7ed] px-3 py-1 rounded-md">
+            Servicio 360° Sin Intermediarios
+          </span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-[#0a3621]">
+            Del Vivero al Arraigo Definitivo en tu Parcela
+          </h2>
+          <p class="text-neutral-600 text-sm md:text-base">
+            No sólo te vendemos los plantones: nuestro equipo de ingeniería y maquinaria ejecuta la plantación completa con garantía de resultado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {steps.map((st) => (
+            <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col justify-between space-y-4 hover:-translate-y-1 transition-transform">
+              <div>
+                <span class="text-2xl font-black text-[#244d36]/30 block mb-2">{st.num}</span>
+                <h3 class="font-bold text-sm text-[#0a3621] mb-2">{st.title}</h3>
+                <p class="text-xs text-neutral-600 leading-relaxed">{st.desc}</p>
+              </div>
+              <div class="pt-2">
+                <span class="material-symbols-outlined text-[#244d36] text-xl">check</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA / PRESUPUESTO VIVERO -->
+    <section id="reserva-vivero" class="max-w-4xl mx-auto px-6 py-20">
+      <div class="bg-white rounded-3xl p-8 md:p-12 border border-neutral-200 shadow-xl space-y-8">
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#eef7ed] text-[#244d36] mx-auto mb-2">
+            <span class="material-symbols-outlined text-2xl">local_florist</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-[#0a3621]">
+            Solicitar Presupuesto y Reserva de Planta en Vivero
+          </h2>
+          <p class="text-xs md:text-sm text-neutral-600 max-w-xl mx-auto">
+            Indícanos los datos de tu plantación o las plantas que necesitas. Te enviaremos cotización formal y asesoría de marco sin compromiso.
+          </p>
+        </div>
+
+        <form id="viveroForm" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-1.5">
+              <label for="nombre" class="text-xs font-bold text-neutral-700">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Ej. Juan Pérez González"
+                class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36]"
+              />
+            </div>
+            <div class="space-y-1.5">
+              <label for="telefono" class="text-xs font-bold text-neutral-700">Teléfono de contacto *</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="Ej. 638 00 00 00"
+                class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36]"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-1.5">
+              <label for="especie" class="text-xs font-bold text-neutral-700">Especie principal *</label>
+              <select
+                id="especie"
+                name="especie"
+                class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36] bg-white"
+              >
+                <option value="olivo">Plantones de Olivo</option>
+                <option value="almendro">Plantones de Almendro</option>
+                <option value="pistacho">Plantones de Pistacho</option>
+                <option value="mixto">Plantación mixta / Otras</option>
+              </select>
+            </div>
+            <div class="space-y-1.5">
+              <label for="cantidad" class="text-xs font-bold text-neutral-700">Cantidad estimada de plantas</label>
+              <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                placeholder="Ej. 1.200 plantas"
+                class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36]"
+              />
+            </div>
+            <div class="space-y-1.5">
+              <label for="municipio" class="text-xs font-bold text-neutral-700">Municipio de la finca</label>
+              <input
+                type="text"
+                id="municipio"
+                name="municipio"
+                placeholder="Ej. Cabra, Lucena, Baena..."
+                class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36]"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="tipo_servicio" class="text-xs font-bold text-neutral-700">Modalidad deseada *</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <label class="flex items-center gap-2 p-3 rounded-xl border border-neutral-200 cursor-pointer hover:bg-neutral-50">
+                <input type="radio" name="modalidad" value="solo_planta" checked class="text-[#244d36] focus:ring-[#244d36]" />
+                <span>Solo suministro de planta de vivero con entrega</span>
+              </label>
+              <label class="flex items-center gap-2 p-3 rounded-xl border border-neutral-200 cursor-pointer hover:bg-neutral-50">
+                <input type="radio" name="modalidad" value="llave_en_mano" class="text-[#244d36] focus:ring-[#244d36]" />
+                <span>Plantación completa llave en mano (GPS, riego y protectores)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="mensaje" class="text-xs font-bold text-neutral-700">Detalles adicionales</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="3"
+              placeholder="Indica variedad concreta, marco previsto, superficie en hectáreas o fecha de plantación prevista..."
+              class="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#244d36]"
+            ></textarea>
+          </div>
+
+          <div class="text-xs text-neutral-500">
+            * Tus datos serán tratados exclusivamente para responder a tu consulta conforme a nuestra <a href="/politicas-privacidad" class="underline text-[#244d36]">Política de Privacidad</a>.
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-[#244d36] hover:bg-[#0a3621] text-white font-bold text-base py-4 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+          >
+            <span class="material-symbols-outlined">send</span>
+            <span>Enviar solicitud de reserva a Vivero SODAGRO</span>
+          </button>
+        </form>
+
+        <div id="viveroStatus" class="hidden p-4 rounded-xl bg-[#eef7ed] border border-[#beecb0] text-[#0a3621] text-center text-sm">
+          <p class="font-bold">¡Solicitud recibida correctamente!</p>
+          <p class="mt-1 text-xs">Se abrirá WhatsApp para tramitar la cotización directa con nuestro ingeniero agrónomo de viveros.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const vForm = document.getElementById('viveroForm') as HTMLFormElement | null;
+      if (vForm) {
+        vForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const fd = new FormData(vForm);
+          const nombre = fd.get('nombre')?.toString().trim() || 'No indicado';
+          const telefono = fd.get('telefono')?.toString().trim() || '';
+          const especie = fd.get('especie')?.toString() || 'olivo';
+          const cantidad = fd.get('cantidad')?.toString().trim() || 'No especificada';
+          const municipio = fd.get('municipio')?.toString().trim() || 'No indicado';
+          const modalidad = fd.get('modalidad')?.toString() === 'llave_en_mano' ? 'Llave en mano completo' : 'Solo suministro de planta';
+          const mensaje = fd.get('mensaje')?.toString().trim() || '';
+
+          let text = '🌱 *SOLICITUD VIVERO Y PLANTACIONES — SODAGRO*\n';
+          text += '━━━━━━━━━━━━━━━━━━━━━━\n';
+          text += '👤 *Nombre:* ' + nombre + '\n';
+          text += '📞 *Teléfono:* +34 ' + telefono + '\n';
+          text += '📍 *Municipio:* ' + municipio + '\n';
+          text += '🌿 *Especie:* ' + especie.toUpperCase() + '\n';
+          text += '🔢 *Cantidad estimada:* ' + cantidad + '\n';
+          text += '🚜 *Modalidad:* ' + modalidad + '\n';
+          if (mensaje) {
+            text += '\n💬 *Detalles adicionales:*\n"' + mensaje + '"\n';
+          }
+          text += '━━━━━━━━━━━━━━━━━━━━━━\n';
+          text += '_Enviado desde sodagro.es/vivero_';
+
+          const encoded = encodeURIComponent(text);
+          const whatsappUrl = 'https://wa.me/34638717215?text=' + encoded;
+
+          const status = document.getElementById('viveroStatus');
+          if (status) status.classList.remove('hidden');
+
+          window.open(whatsappUrl, '_blank');
+        });
+      }
+    });
+  </script>
+</Layout>

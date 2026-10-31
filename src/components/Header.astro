@@ -8,6 +8,7 @@ const { currentPath = Astro.url.pathname } = Astro.props;
 const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/vivero", label: "Vivero" },
   { href: "/sobre", label: "Sobre Nosotros" },
   { href: "/contacto", label: "Contacto" },
 ];
@@ -15,12 +16,12 @@ const navLinks = [
 
 <header class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-neutral-200/50 shadow-[0_1px_8px_rgba(0,0,0,0.03)] transition-all">
   <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
-    <!-- Logo SODAGRO (Limpio, sin textos duplicados) -->
-    <a href="/" class="flex items-center shrink-0 hover:opacity-95 transition-opacity" aria-label="SODAGRO Inicio">
+    <!-- Logo SODAGRO Oficial -->
+    <a href="/" class="flex items-center shrink-0 hover:opacity-90 transition-opacity" aria-label="SODAGRO - Soluciones y Desarrollos Agrícolas">
       <img
-        alt="SODAGRO"
-        class="h-11 w-auto object-contain"
-        src="/assets/logo-sodagro.svg"
+        alt="SODAGRO - Soluciones y Desarrollos Agrícolas"
+        class="h-12 md:h-13 w-auto object-contain"
+        src="/assets/logo-sodagro.png"
       />
     </a>
 

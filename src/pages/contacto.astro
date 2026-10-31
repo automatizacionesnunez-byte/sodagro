@@ -382,17 +382,17 @@ const seo = {
 </div>
 </div>
 </section>
-</div></main><a aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-primary hover:bg-secondary text-on-primary px-4 py-3 rounded-full shadow-[0_8px_24px_rgba(37,43,38,0.16)] transition-all group" href="https://wa.me/34638717215" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-2xl">chat</span><span class="font-label-lg text-label-lg hidden sm:inline group-hover:inline transition-all">WhatsApp directo</span></a>
+</div></main>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
+    const contactForm = document.getElementById('contactForm') as HTMLFormElement | null;
     if (contactForm) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
         const fd = new FormData(contactForm);
-        const motivoVal = fd.get('motivo');
-        const motivos = {
+        const motivoVal = fd.get('motivo')?.toString() || 'presupuesto';
+        const motivos: Record<string, string> = {
           presupuesto: 'Solicitar presupuesto',
           consulta: 'Consulta general',
           pac: 'Asesoramiento PAC'
@@ -406,7 +406,7 @@ const seo = {
         const ubicacion = fd.get('ubicacion')?.toString().trim() || 'No indicada';
         const superficie = fd.get('superficie')?.toString().trim() || '';
         
-        const servSelect = document.getElementById('servicio');
+        const servSelect = document.getElementById('servicio') as HTMLSelectElement | null;
         const servicio = servSelect && servSelect.selectedIndex >= 0 && servSelect.options[servSelect.selectedIndex]?.value !== '' 
           ? servSelect.options[servSelect.selectedIndex]?.text 
           : 'Consulta general técnica';
@@ -439,7 +439,7 @@ const seo = {
         const whatsappUrl = 'https://wa.me/34638717215?text=' + encoded;
 
         const toast = document.getElementById('successToast');
-        const fallback = document.getElementById('whatsappFallbackLink');
+        const fallback = document.getElementById('whatsappFallbackLink') as HTMLAnchorElement | null;
         if (toast) toast.classList.remove('hidden');
         if (fallback) fallback.href = whatsappUrl;
 
