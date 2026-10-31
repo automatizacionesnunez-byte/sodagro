@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/build.mjs",
-    "deploy": "node scripts/build.mjs && wrangler deploy",
-    "preview": "node scripts/build.mjs && wrangler dev",
+    "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint scripts",
     "typecheck": "astro check",
@@ -32,8 +31,7 @@
     "@playwright/test": "^1.50.0",
     "eslint": "^9.0.0",
     "prettier": "^3.4.0",
-    "typescript": "^5.7.0",
-    "wrangler": "^4.156.0"
+    "typescript": "^5.7.0"
   },
   "overrides": {
     "sharp": "^0.35.0"
