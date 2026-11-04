@@ -6,6 +6,108 @@ const seo = {
   description: "Servicios agrícolas integrales y vivero oficial en Andalucía: recolección con paraguas, poda, tratamientos, nuevas plantaciones llave en mano y gestión PAC. Presupuesto en 24h.",
   canonical: "https://sodagro.es/"
 };
+
+const faqBlocks = [
+  {
+    title: "1. Gestión Integral de Fincas y PAC",
+    description: "Propietarios no residentes, herederos y tramitaciones normativas sin penalización.",
+    items: [
+      {
+        q: "Si hay una inspección o penalización de la Junta de Andalucía por la PAC o el e-cuaderno, ¿quién responde?",
+        a: "El titular de la explotación es el responsable legal de la veracidad de los datos. En SODAGRO actuamos como tu representante técnico autorizado: entregamos y registramos cada labor y tratamiento fitosanitario en plazo normativo, mantenemos la documentación al día y te defendemos presencialmente en inspecciones y alegaciones."
+      },
+      {
+        q: "Vivo fuera y la finca es de herederos o comunidad de bienes: ¿cómo controlo costes y cosecha?",
+        a: "Con total trazabilidad y control previo: trabajamos con presupuestos aprobados, partes de maquinaria diarios, fotografías de cada labor e informes periódicos. Al terminar la campaña, la liquidación de la cooperativa o almazara se concilia al céntimo con los gastos reales."
+      },
+      {
+        q: "¿Cómo solicito una visita o estudio agronómico inicial sin compromiso?",
+        a: "Indícanos por WhatsApp o teléfono tu municipio, cultivo y superficie. Un ingeniero agrónomo de SODAGRO acude a la finca, revisa el estado del cultivo y te entrega un diagnóstico con propuesta técnica y presupuesto cerrado, sin ningún compromiso."
+      }
+    ]
+  },
+  {
+    title: "2. Contratación, Tarifas y Ámbito Operativo",
+    description: "Formas de cobro, fincas pequeñas, seguros y desplazamiento en Andalucía.",
+    items: [
+      {
+        q: "¿Cobráis por hectárea, por hora o por kilo de aceituna recogida?",
+        a: "Presupuestamos a medida tras valorar la finca sobre el terreno: habitualmente por horas con mínimo de jornada para labores mecanizadas, o a precio cerrado por hectárea en parcelas homogéneas. El presupuesto desglosa máquina, tractorista, cuadrilla, transporte y repaso."
+      },
+      {
+        q: "¿En qué zonas y comarcas de Andalucía tenéis disponibilidad y desplazáis maquinaria?",
+        a: "Nuestra base operativa y parque de maquinaria están en Cabra (Córdoba). Trabajamos habitualmente en toda la provincia de Córdoba (Campiña y Subbética: Lucena, Baena, Montilla, Priego), Jaén, Sevilla, norte de Málaga y Granada, desplazando equipos propios a pie de parcela."
+      },
+      {
+        q: "¿Trabajáis fincas pequeñas de pocas hectáreas o cobráis un desplazamiento excesivo?",
+        a: "Sí trabajamos parcelas pequeñas. Para que la labor te resulte rentable, coordinamos fincas cercanas de la misma comarca y acordamos una tarifa de salida o desplazamiento fija antes de arrancar, sin ningún sobrecoste sorpresa."
+      },
+      {
+        q: "¿Qué ocurre si hay daños en los árboles o un trabajo no queda bien ejecutado?",
+        a: "Pactamos por escrito el alcance y los criterios de calidad antes de iniciar el trabajo. Realizamos un acta previa del estado de la plantación y contamos con seguro de responsabilidad civil para cualquier contingencia."
+      }
+    ]
+  },
+  {
+    title: "3. Recolección Mecanizada y Maquinaria",
+    description: "Vibrador con paraguas invertido, olivar tradicional, pendientes y labores sueltas.",
+    items: [
+      {
+        q: "¿El paraguas vibrador invertido puede dañar la corteza o el tronco de mis olivos?",
+        a: "No. Adaptamos la presión de la pinza, los tacos protectores y el tiempo de vibración al diámetro y edad del árbol. Además, revisamos previamente los troncos y descartamos vibrar olivos viejos con daños, huecos o patologías visibles."
+      },
+      {
+        q: "¿Se puede meter el paraguas en olivar tradicional, de varios pies o en pendientes?",
+        a: "Depende del marco y la accesibilidad de la parcela. En olivos de varios pies valoramos en campo si conviene paraguas o vibrador con mantones. En pendiente trabajamos siempre a favor del terreno, priorizando la estabilidad y la seguridad del operario."
+      },
+      {
+        q: "¿Puedo contrataros solo para una labor suelta (como la recolección o la poda) sin contrato anual?",
+        a: "Sí. No estás obligado a contratar la gestión anual. La mayoría de agricultores nos contratan para labores puntuales de campaña: recolección con paraguas, poda, tratamientos fitosanitarios o desbroce según sus necesidades de calendario."
+      },
+      {
+        q: "¿Trabajáis únicamente olivar o también recolectáis y gestionáis almendro y pistacho?",
+        a: "Trabajamos los tres cultivos leñosos principales. Nuestros vibradores y paraguas están preparados tanto para aceituna de molino y verdeo como para almendra y pistacho, ajustando las lonas y las frecuencias de vibración a cada especie."
+      }
+    ]
+  },
+  {
+    title: "4. Vivero Oficial, Calendario y Plantaciones Llave en Mano",
+    description: "Plantones certificados, variedades adaptadas, guiado GPS RTK y garantía de arraigo.",
+    items: [
+      {
+        q: "¿Los plantones tienen pasaporte fitosanitario oficial y garantías frente a Xylella?",
+        a: "Sí. Somos vivero oficial inscrito en el ROPVEG. Todos los lotes se entregan con factura, etiqueta identificativa clonal y pasaporte fitosanitario oficial de la Junta de Andalucía, certificados libres de Xylella fastidiosa y verticilosis."
+      },
+      {
+        q: "¿Qué variedad me recomendáis para mi zona: secano o regadío?",
+        a: "Te asesoramos según suelo, pluviometría y marco: en regadío destacan Picual y Arbequina por su rápida entrada en producción y rendimiento graso; en secano andaluz, la Hojiblanca ofrece una rusticidad y adaptación excepcionales."
+      },
+      {
+        q: "¿Qué incluye la plantación «llave en mano» con GPS RTK y qué garantía de arraigo dais?",
+        a: "Incluye estudio agronómico, preparación del suelo, replanteo y marcado milimétrico por GPS RTK, suministro de planta certificada, tutores, protectores y primer riego. La garantía de arraigo y reposición de marras se estipula por contrato por escrito."
+      },
+      {
+        q: "¿Con cuánta antelación conviene reservar la campaña de recolección o la planta de vivero?",
+        a: "Para recolección mecanizada recomendamos cerrar fechas 3 o 4 semanas antes del inicio de campaña para garantizar disponibilidad de máquina. Para nuevas plantaciones de vivero, conviene reservar los plantones con 2 a 3 meses de antelación para asegurar lote y variedad."
+      }
+    ]
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqBlocks.flatMap((block) =>
+    block.items.map((item) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  )
+};
 ---
 
 <Layout {...seo}>
@@ -316,35 +418,44 @@ const seo = {
       </div>
     </section>
 
-    <!-- 5. PREGUNTAS FRECUENTES CLAVE (Solo las 3 esenciales) -->
-    <section class="max-w-3xl mx-auto px-6 pb-20">
-      <div class="text-center space-y-2 mb-8">
-        <h2 class="text-2xl font-bold text-[#0a3621]">Dudas habituales</h2>
-        <p class="text-xs text-neutral-600">Lo que todo agricultor quiere saber antes de llamarnos.</p>
+    <!-- 5. PREGUNTAS FRECUENTES CLAVE (SEO & AEO ESTRUCTURADO) -->
+    <section class="max-w-4xl mx-auto px-6 pb-24" id="faq">
+      <div class="text-center space-y-2 mb-12">
+        <h2 class="text-3xl font-extrabold text-[#0a3621]">Dudas habituales antes de contratar</h2>
+        <p class="text-sm text-neutral-600 max-w-xl mx-auto">
+          Certezas sobre precios, garantías de maquinaria, gestión PAC y compra de plantones de vivero.
+        </p>
       </div>
 
-      <div class="space-y-3">
-        <div class="p-4 rounded-xl bg-white border border-neutral-200">
-          <h3 class="font-bold text-sm text-[#0a3621]">¿En qué zonas prestáis servicio?</h3>
-          <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-            Nuestra base operativa está en Cabra (Córdoba). Trabajamos habitualmente en toda la provincia de Córdoba, Jaén, Sevilla, Granada y Málaga, desplazando maquinaria y cuadrillas propias a pie de finca.
-          </p>
-        </div>
+      <div class="space-y-10">
+        {faqBlocks.map((block) => (
+          <div class="space-y-4">
+            <div class="border-b border-neutral-200 pb-2">
+              <h3 class="text-lg font-bold text-[#0a3621]">{block.title}</h3>
+              <p class="text-xs text-neutral-500">{block.description}</p>
+            </div>
 
-        <div class="p-4 rounded-xl bg-white border border-neutral-200">
-          <h3 class="font-bold text-sm text-[#0a3621]">¿Puedo contratar solo un trabajo suelto de recolección o poda?</h3>
-          <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-            Sí. No estás obligado a contratar la gestión anual. Realizamos campañas puntuales de recolección mecanizada, podas, siembras o tratamientos fitosanitarios según tus necesidades de calendario.
-          </p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-white border border-neutral-200">
-          <h3 class="font-bold text-sm text-[#0a3621]">¿Qué garantías ofrecen los plantones de vuestro vivero?</h3>
-          <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-            Todos nuestros plantones cuentan con Pasaporte Fitosanitario oficial de la Junta de Andalucía, certificación de pureza clonal y garantía contractual de arraigo con reposición de marras en primera campaña.
-          </p>
-        </div>
+            <div class="space-y-3">
+              {block.items.map((item) => (
+                <details class="group bg-white rounded-xl border border-neutral-200/80 overflow-hidden transition-colors hover:border-[#244d36]/50">
+                  <summary class="flex items-center justify-between gap-4 p-4 sm:p-5 cursor-pointer font-bold text-sm text-[#0a3621] select-none list-none">
+                    <span>{item.q}</span>
+                    <span class="material-symbols-outlined text-neutral-400 group-open:rotate-180 group-open:text-[#244d36] transition-transform duration-200 shrink-0 text-xl">
+                      expand_more
+                    </span>
+                  </summary>
+                  <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-1 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100">
+                    <p>{item.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
+
+      <!-- JSON-LD FAQPage para Google, Perplexity y ChatGPT -->
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     </section>
   </main>
 </Layout>
